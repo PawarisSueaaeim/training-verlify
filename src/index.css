@@ -1,0 +1,54 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans Thai", sans-serif;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+dialog {
+  padding: 0;
+  background: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+dialog::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+dialog {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(13%) sepia(48%) saturate(3232%) hue-rotate(195deg) brightness(89%) contrast(97%);
+}
+
+/*div {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}*/
+
+.clickable:active {
+  transform: translateY(1px);
+}
